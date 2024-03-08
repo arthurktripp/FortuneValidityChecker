@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+  <h1>Your Results:</h1>
+  <p>Your fortune: {{ fortune }}</p>
+  <p>Your lucky numbers:
+    <ul>
+    {% for each in nums %}
+      <li style="list-style: none">{{each}}</li>
+    {% endfor %}
+    </ul>
+  </p>
+  <p>Only counting the {{letters}} letters: {{letters_ans}}</p>
+  <p>And with {{letters_punct}} total characters: {{letters_punct_ans}}</p>
+
+  <a href="/">Try again!</a>
+
+{% endblock %}

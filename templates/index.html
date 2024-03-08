@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+  <h1>WELCOME TO THE FORTUNE VALIDITY CHECKER</h1>
+  <p>See if your fortune will come true</p>
+  <p>Tell me your fortune and the numbers on the back.<br>
+  I'll show if you can add and subtract those numbers to equal the characters in the fortune.</p>
+
+    <form method="post" action="/">
+      <label for="fortune_text">Enter your fortune:</label><br>
+      <input id="fortune_text" size="100" name="fortune" required><br><br>
+      <span>Enter up to 10 lucky numbers: </span><br>
+      <input type="number" id="num_0" name="num_0" required><br>
+      <input type="number" id="num_1" name="num_1"><br>
+      <input type="number" id="num_2" name="num_2"><br>
+      <input type="number" id="num_3" name="num_3"><br>
+      <input type="number" id="num_4" name="num_4"><br>
+      <input type="number" id="num_5" name="num_5"><br>
+      <input type="number" id="num_6" name="num_6"><br>
+      <input type="number" id="num_7" name="num_7"><br>
+      <input type="number" id="num_8" name="num_8"><br>
+      <input type="number" id="num_9" name="num_9"><br>
+      <input type="submit" value="Let's Go">
+
+    </form>
+
+
+
+{% endblock %}
